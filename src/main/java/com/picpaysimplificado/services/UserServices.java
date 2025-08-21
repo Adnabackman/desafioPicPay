@@ -19,8 +19,16 @@ public class UserServices {
 			
 		}
 		if(sender.getBalance().compareTo(amount) <0) {
-			throw new Exception("Usuário não tem saldo suficiente");
+			throw new Exception("Saldo insuficiente");
 
 		}			
+	}
+	
+	public User findUserById(Long id) throws Exception {
+	    return this.repository.findById(id).orElseThrow(() -> new Exception("Usuário não encontrado!"));
+	}
+	
+	public void saveUser(User user) {
+		this.repository.save(user);
 	}
 }
