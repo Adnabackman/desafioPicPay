@@ -20,7 +20,7 @@ import jakarta.persistence.Id;
 @Getter
 @Setter
 @AllArgsConstructor
-@EqualsAndHashCode(of="id")
+@EqualsAndHashCode(of="Id")
 
 public class User {
 	@Id
