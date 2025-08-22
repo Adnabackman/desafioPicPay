@@ -16,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 @Service
 public class TransactionService {
 	@Autowired
-	private UserServices userService;
+	private UserService userService;
 	
 	@Autowired
 	private TransactionRepository repository;
