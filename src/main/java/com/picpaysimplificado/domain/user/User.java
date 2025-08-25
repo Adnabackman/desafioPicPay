@@ -14,6 +14,7 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import jakarta.persistence.Id;
 
@@ -23,6 +24,7 @@ import jakarta.persistence.Id;
 @Setter
 @AllArgsConstructor
 @EqualsAndHashCode(of="Id")
+@NoArgsConstructor
 
 public class User {
 	@Id
@@ -45,6 +47,7 @@ public class User {
 		this.balance = data.balance();
 		this.userType = data.usertype();
 		this.password = data.password();
+		this.document = data.document();
 		this.email = data.email();
 		
 		
