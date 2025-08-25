@@ -3,10 +3,11 @@ package com.picpaysimplificado.services;
 import com.picpaysimplificado.domain.user.User;
 import com.picpaysimplificado.domain.user.UserType;
 import com.picpaysimplificado.dtos.UserDTO;
+import com.picpaysimplificado.repositories.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.picpaysimplificadore.repositories.UserRepository;
+
 import java.math.BigDecimal;
 import java.util.List;
 

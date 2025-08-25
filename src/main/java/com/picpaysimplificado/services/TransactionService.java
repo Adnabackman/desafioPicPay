@@ -3,7 +3,8 @@ package com.picpaysimplificado.services;
 import com.picpaysimplificado.domain.user.User;
 import com.picpaysimplificado.domain.user.transaction.Transaction;
 import com.picpaysimplificado.dtos.TransactionDTO;
-import com.picpaysimplificadore.repositories.TransactionRepository;
+import com.picpaysimplificado.repositories.TransactionRepository;
+
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.Map;
